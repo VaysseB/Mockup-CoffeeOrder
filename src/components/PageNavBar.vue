@@ -16,7 +16,7 @@
       </b-nav>
 
       <b-nav is-nav-bar class="ml-auto">
-        <b-nav-item-dropdown text="Lang - FR" Right>
+        <b-nav-item-dropdown text="Lang - EN" Right>
           <b-dropdown-item href="#">FR</b-dropdown-item>
           <b-dropdown-item href="#">EN</b-dropdown-item>
           <b-dropdown-item href="#">ES</b-dropdown-item>

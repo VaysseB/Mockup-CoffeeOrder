@@ -53,7 +53,7 @@
 <style>
 .coffee-card {
   float: left;
-  width: 33.333%;
+  width: 31.5%;
   max-width: 180px;
   margin-bottom: 0.75em;
   margin-right: 6px;
