@@ -8,8 +8,10 @@
       <div class="container">
         <div class="row">
           <coffee-card
-             v-for="coffee in coffees"
+             v-for="(coffee, index) in coffees"
              key="coffee.guid"
+             :mode="index % 2 == 0 ? 'image-on-top' : 'name-on-top'"
+             :no-description="true"
              :coffee="coffee">
           </coffee-card>
         </div>

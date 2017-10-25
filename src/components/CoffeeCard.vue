@@ -1,15 +1,19 @@
 <template>
   <b-card no-body class="mb-2 coffee-card">
+    <b-card-header v-if="mode === 'name-on-top'">
+      {{ coffee.name }}
+    </b-card-header>
+    
     <b-card-img
       :src="coffee.img"
       alt="coffee illustration">
     </b-card-img>
     
-    <b-card-header>
+    <b-card-header v-if="mode === 'image-on-top'">
       {{ coffee.name }}
     </b-card-header>
     
-    <b-card-body>
+    <b-card-body v-if="!noDescription">
       <p class="card-text">
         {{ coffee.description }}
       </p>
@@ -28,7 +32,9 @@
 <script>
   export default {
     props: {
-      coffee: { required: true }
+      coffee: { required: true },
+      mode: { required: false, default: 'image-on-top', type: String },
+      'no-description': { required: false, default: false, type: Boolean }
     },
     data () {
       return { order_count: 0 }
