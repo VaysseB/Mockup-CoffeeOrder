@@ -22,7 +22,7 @@
     <b-card-footer>
       <b-button-group>
         <b-button variant="success" @click="takeOne">+</b-button>
-        <b-button :variant="[this.order_count > 0 ? 'info' : 'link']">Cart: {{ this.order_count }}</b-button>
+        <b-button :variant="this.order_count > 0 ? 'info' : 'link'">Cart: {{ this.order_count }}</b-button>
         <b-button variant="warning" @click="releaseOne">-</b-button>
       </b-button-group>
     </b-card-footer>

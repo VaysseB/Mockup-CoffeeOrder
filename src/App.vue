@@ -10,7 +10,8 @@
           <coffee-card
              v-for="(coffee, index) in coffees"
              key="coffee.guid"
-             :mode="index % 2 == 0 ? 'image-on-top' : 'name-on-top'"
+             :mode_="'name-on-top'"
+             :mode="'image-on-top'"
              :no-description="true"
              :coffee="coffee">
           </coffee-card>
