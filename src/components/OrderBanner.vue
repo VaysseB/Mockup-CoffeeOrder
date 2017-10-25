@@ -1,6 +1,6 @@
 <template>
   <b-jumbotron
-     header="Medtech Coffee Order"
+     header="Coffee Order"
      lead="Month: October">
     <p>Please make your order. Coffee comes into <u>box of 50 caps</u>.</p>
     <b-btn variant="primary" href="#">Submit my order</b-btn>
